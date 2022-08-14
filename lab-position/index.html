@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab position</title>
+    <style>
+        body {
+            height: 200vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .big {
+            width: 50%;
+            height: 50%;
+        }
+
+        .small {
+            width: 25%;
+            height: 25%;
+        }
+
+        .inside {
+            width: 10%;
+            height: 10%;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .top {
+            top: 0;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .bottom {
+            bottom: 0;
+        }
+
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .pink {
+            background-color: deeppink;
+        }
+
+        .white {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="absolute small top left red"></div>
+    <div class="absolute small top right green"></div>
+    <div class="absolute small bottom left blue"></div>
+    <div class="absolute small bottom right yellow"></div>
+    <div class="fixed big center white ">
+        <div class="absolute inside top left red"></div>
+        <div class="absolute inside top right green"></div>
+        <div class="absolute inside center pink "></div>
+        <div class="absolute inside bottom left blue"></div>
+        <div class="absolute inside bottom right yellow"></div>
+    </div>
+</body>
+
+</html>

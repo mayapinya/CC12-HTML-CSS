@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    z-index   : 1;
+}
+
+body {
+    margin: 0;
+}
+
+.bt {
+    text-align: center;
+    height    : 30px;
+}
+
+.bt-content {
+    text-align      : center;
+    background-color: black;
+    color           : white;
+    padding         : 9px 35px;
+    border-style    : solid;
+    border-width    : 2px;
+    border-color    : black;
+
+    cursor     : pointer;
+    user-select: none;
+}
+
+/* ชี้ในปุ่มแล้วเปลี่ยนสี */
+.bt-content:hover {
+    background-color: white;
+    color           : black;
+    padding         : 9px 35px;
+    border-style    : solid;
+    border-width    : 2px;
+
+    cursor     : pointer;
+    user-select: none;
+}
+
+/* เส้นบรรทัดชิดซ้าย */
+.line {
+    width           : 40px;
+    height          : 2px;
+    background-color: black;
+    margin-top      : 68px;
+    margin-bottom   : 30px;
+}
+
+/* reset เวลากดลิงต์แล้วเป็นสีม่วง */
+a {
+    text-decoration: none;
+    color          : black;
+}
+
+.gap-menu {
+    height: 125px;
+}
+
+/* Menubar */
+header {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    background     : white;
+    position       : fixed;
+    width          : 100%;
+    height         : 127px;
+    z-index        : 2;
+}
+
+.name-site {
+    width     : 316px;
+    text-align: center;
+}
+
+.name-site h2 {
+    font-size     : 22px;
+    letter-spacing: 2px;
+}
+
+.menu {
+    width     : 580px;
+    text-align: right;
+    padding   : 20px;
+    align-self: center;
+}
+
+.menu a {
+    margin: 5px;
+}
+
+.menu-login {
+    padding   : 20px;
+    align-self: center;
+}
+
+.menu-login div {
+    cursor     : pointer;
+    display    : flex;
+    align-items: center;
+    color      : rgb(49, 127, 129);
+}
+
+.menu-login span {
+    margin-left: 7px;
+}
+
+.menu-login img {
+    width : 24px;
+    height: 24px;
+}
+/* Menubar */
+
+/* Home Page */
+.home {
+    background-image: url("./pic/bg-home.jpg");
+}
+
+.box-home {
+    display       : flex;
+    flex-direction: column;
+    padding-top   : 80px;
+    padding-bottom: 500px;
+}
+
+.home-one {
+    line-height   : 1.4em;
+    text-align    : center;
+    font-size     : 20px;
+    letter-spacing: 0.18em;
+    font-weight   : bold;
+}
+
+.home-two {
+    line-height   : 1em;
+    text-align    : center;
+    font-size     : 7em;
+    margin        : 0;
+    letter-spacing: 20px;
+}
+
+.home-three {
+    text-align    : center;
+    font-size     : 23px;
+    letter-spacing: 0.05em;
+    margin-bottom : 36px;
+}
+/* Home Page */
+
+/* About Page */
+.about {
+    display: flex;
+    height : 716px;
+}
+
+.about-left {
+    margin-left : auto;
+    margin-right: 5vw;
+    padding-left: 50px;
+}
+
+.about-left h1 {
+    font-size     : 42px;
+    margin        : 0;
+    letter-spacing: 3px;
+}
+
+.about-left p {
+    width         : 371px;
+    line-height   : 25.5px;
+    letter-spacing: 1.5px;
+}
+
+.about-right {
+    height: 100%;
+    width : 50%;
+}
+
+.about-right img {
+    width     : 100%;
+    height    : 716px;
+    object-fit: cover;
+}
+
+.about .bt {
+    margin-top: 50px;
+    text-align: left;
+}
+/* About Page */
+
+/* Service Home */
+.service {
+    display         : flex;
+    flex-direction  : column;
+    height          : 850px;
+    width           : 100%;
+    background-image: url('./pic/bg-service.jpg');
+    background-size : cover;
+    padding-left    : 50px;
+    padding-right   : 50px;
+}
+
+.title {
+    margin: 0 auto;
+    width : 950px;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    font-size     : 42px;
+    margin        : 0;
+}
+
+.box-content {
+    display        : flex;
+    justify-content: space-between;
+    margin         : 0 auto;
+    padding        : 20px 0;
+}
+
+.service-box {
+    width           : 294px;
+    padding         : 27px;
+    margin-right    : 20px;
+    border-style    : solid;
+    background-color: rgba(255, 255, 255, 0);
+    border-color    : black;
+    border-width    : 7px;
+    text-align      : center;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+}
+
+.service-box h2 {
+    line-height   : 1.33em;
+    display       : block;
+    margin-top    : 10px;
+    text-transform: uppercase;
+    font-size     : 1.6rem;
+}
+
+.service-box p {
+    margin: 5px;
+}
+
+.service-box hr {
+    border          : 0;
+    height          : 2px;
+    width           : 100%;
+    background-color: black;
+}
+
+.service-box .bt {
+    margin-top: 20px;
+}
+
+.service .bt {
+    margin-top: 50px;
+}
+/* Service Home */
+
+/* Service Page */
+.custom-service h1 {
+    font-weight   : bold;
+    letter-spacing: 5px;
+    text-transform: initial;
+    margin-bottom : 80px;
+}
+
+.custom-service h2 {
+    font-weight   : normal;
+    text-transform: initial;
+}
+
+.custom-service .title-two {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 18px;
+}
+
+.title-two {
+    margin-bottom: 30px;
+}
+
+.title-two .line-one {
+    padding      : 13px;
+    border-bottom: 2px solid rgb(49, 127, 129);
+}
+
+.title-two .line-two {
+    padding      : 13px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.custom-service .service-box {
+    background-color: #ffffff;
+    border          : 0;
+}
+/* Service Page */
